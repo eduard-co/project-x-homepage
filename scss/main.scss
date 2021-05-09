@@ -1,0 +1,82 @@
+@use 'variables'as *;
+@use 'reset'as *;
+@use 'general'as *;
+
+.container {
+	display: grid;
+	grid-template-columns: auto 200px;
+	height: 100vh;
+}
+
+.navigation-row {
+	background-color: $darkBlue;
+	height: calc(100vh / 5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.navigation-row p {
+	color: $white;
+}
+
+.navigation-row:hover {
+	background-color: $blue;
+}
+
+.navigation-row p {
+	text-align: center;
+	font-weight: $bold;
+}
+
+.navigation-row img {
+	height: 24px;
+	width: 24px;
+}
+
+.content {
+	padding: 20px 120px;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: auto 200px;
+}
+
+.site-logo img {
+	width: 18em;
+}
+
+.site-email {
+	display: flex;
+	vertical-align: middle;
+	align-content: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.site-email a {
+	font-family: $font-stack;
+	color: $blue;
+	font-weight: $light;
+	font: $mediumFont;
+	text-align: center;
+}
+
+.site-email a:hover {
+	color: $darkBlue;
+}
+
+.hero {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	color: $darkBlue;
+	font-family: $font-stack;
+	margin: calc(100vh / 4) 0px;
+	line-height: 1rem;
+}
+
+.presentation-img img {
+	width: calc(35vw);
+}

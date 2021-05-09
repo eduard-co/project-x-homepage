@@ -1,0 +1,20 @@
+@use 'variables'as *;
+
+p {
+	font-family: $font-stack;
+}
+
+h1 {
+	font-size: $hugeFont;
+}
+
+h2 {
+	font-size: $bigFont;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: $font-stack;
+}
